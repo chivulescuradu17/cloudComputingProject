@@ -19,9 +19,7 @@
         const funnyTranslateOrigin = "https://api.funtranslations.com";
         const funnyBaseApi= `${funnyTranslateOrigin}/translate`;
         const funnyKey = "5wvsbpIXJ4L4rqzyQCL0ZgeF"
-    
-        // to prevent cors in the browser
-        const withCors = (url) => `https://cors-anywhere.herokuapp.com/${url}`; 
+
     
         function encodeURI(data){
             return "?" + Object.keys(data).map(

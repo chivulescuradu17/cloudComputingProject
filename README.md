@@ -1,19 +1,18 @@
 ### Proiect Cloud Computing ###
 
-asdgdgfhdhgh
-## Descriere proiect
 
-Proiectului constă într-o dublă traducere a unui text, inițial din orice limbă dorită în limba engleză, iar apoi in limba Dothraki
+## Descriere tematică
+
+Proiectului constă într-o dublă traducere a unui text, inițial din orice limbă dorită în limba engleză, iar apoi in limba Dothraki. Limbajul Dothraki este unul fictiv, construit în seria de romane fantastice a lui George R. R. Martin, Urzeala Tronurilor (Game of Thrones). Seria este recunoscută și apreciată masiv, la nivel mondial, obținând numeroase premii și titulaturi.
 
 
-## Prezentare API-uri utilizate 
+
+## Descriere API-uri și flux de date
 
 API-uri le pe care le-am folosit sunt următoarele:
-1. https://tech.yandex.com/translate/ ('https://translate.yandex.net') - folosit pentru traducerea din orice limbă selectată în limba engleză
-2. https://funtranslations.com/api/Dothraki ("http://api.funtranslations.com") - folosit pentru traducetea în dialectul Dothraki 
+1. https://translate.yandex.net/api/v1.5/tr.json/translate ('https://yandex.com/dev/translate/') - folosit pentru traducerea în limba engleză
+2. https://funtranslations.com/api/dothraki.json ("https://funtranslations.com/api/") - folosit pentru traducetea în dialectul Dothraki 
 
-
-## Descriere arhitectură
 
 * Aplicația conține dpdv al funcționalităților 3 secțiuni, fiecare prezentând câte un select de limbă și un text area pentru introducerea cuvintelor dorite
 * Selectul pentru limba din care se dorește a se face traducerea vine by default în română, putând fi aleasă ulterior orice altă limbă
@@ -30,7 +29,7 @@ API-uri le pe care le-am folosit sunt următoarele:
 ```
  async function callApi(type, req, success) {
             var url = req.params ? req.url + encodeURI(req.params) : req.url;
-            const response = await fetch(withCors(url), {
+            const response = await fetch(url, {
                 method: type,
                 headers: req.headers
             });
@@ -91,7 +90,7 @@ function translateToEnglish(callback){
 ```
 function funnyTranslate(type, text, callback){
             var req = {
-                url: funnyBaseApi + "/Dothraki.json",
+                url: funnyBaseApi + "/dothraki.json",
                 headers: {
                     'X-Funtranslations-Api-Secret': funnyKey,
                     Origin: funnyTranslateOrigin
@@ -106,6 +105,7 @@ function funnyTranslate(type, text, callback){
             })
         }
 ```
+
 * Funcția care se autoapelează de apiHelper, odată apelată returnează funcțiile apelate (cele 3 metode) 
 ```
 return {
@@ -114,3 +114,8 @@ return {
             funnyTranslate
         }
 ```
+
+
+Pentru vizualizarea aplicației este necesară instalarea dependințelor prin comanda 'npm install', apoi rularea efectivă prin comanda 'node index.js'.
+
+Mulțumesc pentru atenție!
