@@ -118,4 +118,6 @@ return {
 
 Pentru vizualizarea aplicației este necesară instalarea dependințelor prin comanda 'npm install', apoi rularea efectivă prin comanda 'node index.js'.
 
+![image](https://user-images.githubusercontent.com/83884575/117867631-47dbd480-b2a1-11eb-87a3-8e08a8a64020.png)
+
 Mulțumesc pentru atenție!
