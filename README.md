@@ -1,6 +1,6 @@
 ### Proiect Cloud Computing ###
 
-
+asdgdgfhdhgh
 ## Descriere proiect
 
 Proiectului constă într-o dublă traducere a unui text, inițial din orice limbă dorită în limba engleză, iar apoi in limba Dothraki
