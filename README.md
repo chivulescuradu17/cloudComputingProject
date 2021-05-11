@@ -6,7 +6,6 @@
 Proiectului constă într-o dublă traducere a unui text, inițial din orice limbă dorită în limba engleză, iar apoi in limba Dothraki. Limbajul Dothraki este unul fictiv, construit în seria de romane fantastice a lui George R. R. Martin, Urzeala Tronurilor (Game of Thrones). Seria este recunoscută și apreciată masiv, la nivel mondial, obținând numeroase premii și titulaturi.
 
 
-
 ## Descriere API-uri și flux de date
 
 API-uri le pe care le-am folosit sunt următoarele:
@@ -116,8 +115,11 @@ return {
 ```
 
 
+
 Pentru vizualizarea aplicației este necesară instalarea dependințelor prin comanda 'npm install', apoi rularea efectivă prin comanda 'node index.js'.
 
+
 ![image](https://user-images.githubusercontent.com/83884575/117867631-47dbd480-b2a1-11eb-87a3-8e08a8a64020.png)
+
 
 Mulțumesc pentru atenție!
